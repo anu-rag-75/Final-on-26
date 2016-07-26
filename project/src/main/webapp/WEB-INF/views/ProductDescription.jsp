@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="cyan">
+<img src="${pageContext.servletContext.contextPath}/resources/images/Items2.jpg"  width=100 height=100 align=left>
+<form:form action="dispContact" method="post" modelAttribute="contact1">
+        <table>
+                     
+            <tr>
+            	<td>Product Name:</td>
+            	<td>${contact1.name}</td>
+            </tr>
+            <tr>
+                <td>Category:</td>
+               <td>${contact1.category}</td>
+            </tr>
+            <tr>
+                <td>Product Price:</td>
+                <td>${contact1.price}</td>
+            </tr>
+           <tr>
+                <td>Product Stock in Hand:</td>
+                <td>${contact1.stock}</td>
+            </tr>
+                <td colspan="2" align="center"><a href="productTableUsers" role=button>Cancel</a></td>
+            </tr>
+        </table>
+        </form:form>
+<a href="addCart">Add To Cart</a>
+
+</body>
+</html>

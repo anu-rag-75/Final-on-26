@@ -1,0 +1,11 @@
+controllers\HomeController.class
+DAO\productDAOImpl.class
+model\Product.class
+model\UserBean.class
+controllers\SignUpController.class
+controllers\UserBean.class
+DAO\customerServices.class
+DAO\productServices.class
+controllers\Demohandler.class
+model\Customer.class
+DAO\CustomerDAOImpl.class
